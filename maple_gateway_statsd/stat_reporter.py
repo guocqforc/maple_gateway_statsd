@@ -37,7 +37,7 @@ class StatReporter(object):
         self.stat_reader = StatReader(stat_tool_path, stat_file_path)
         self.statsd_client = statsd_client
         # 默认是不变
-        self.statsd_name_converter = lambda x: x
+        self.statsd_name_converter = statsd_name_converter or (lambda x: x)
 
     def report(self):
         """
