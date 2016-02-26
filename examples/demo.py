@@ -13,7 +13,7 @@ def main():
         'path1',
         'path2',
         statsd_client,
-        'cn.vimer'
+        lambda name: 'cn.vimer.%s' % name
     )
     maple_gateway_statsd_client.report()
 
