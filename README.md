@@ -1,2 +1,2 @@
-# maple_gw_statsd_client
+# maple_gateway_statsd
 upload maple gateway stat to statsd
